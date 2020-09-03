@@ -1,0 +1,56 @@
+@import "colors";
+@import "../mixins/typography";
+
+h1 {
+  color: $colorMonoSeven;
+
+  @include typo-h1;
+}
+
+h2 {
+  color: $colorMonoSeven;
+
+  @include typo-h2;
+}
+
+h3 {
+  color: $colorMonoSeven;
+
+  @include typo-h3;
+}
+
+h4 {
+  color: $colorMonoSeven;
+
+  @include typo-h4;
+}
+
+h5 {
+  color: $colorMonoSeven;
+
+  @include typo-h5;
+}
+
+p {
+  color: $colorMonoFour;
+
+  @include typo-p;
+}
+
+.special {
+  color: $colorTwo;
+
+  @include typo-special;
+}
+
+.small {
+  counter-reset: $colorMonoFive;
+
+  @include typo-psmall;
+}
+
+.notes {
+  counter-reset: $colorMonoFour;
+
+  @include typo-psmall;
+}
