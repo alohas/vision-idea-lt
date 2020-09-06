@@ -1,0 +1,54 @@
+@import "src/styles/globals/colors";
+
+#TopBar {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 40px;
+  height: 40px;
+
+  background-color: $colorOne;
+
+  .language-container {
+    display: flex;
+
+    margin: auto 0;
+  }
+
+  .perks-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    .perk {
+      display: inline-flex;
+
+      margin: 0 auto;
+      padding: 12px;
+
+      .perk-name {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .authorization-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto 0;
+
+    .auth-wrap {
+      display: inline-flex;
+    }
+  }
+
+  .icon {
+    margin-right: 10px;
+
+    width: 18px;
+    height: auto;
+  }
+}
