@@ -1,0 +1,94 @@
+@import "src/styles/globals/colors";
+
+#NavBar {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 13px;
+  padding: 0 40px;
+
+  height: 80px;
+
+  .l-side {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+  }
+  .r-side {
+    display: flex;
+    justify-content: flex-end;
+
+    height: 100%;
+  }
+
+  .logo-wrap {
+    margin: 6px 31px 0 0;
+    .logo {
+      height: 47px;
+    }
+  }
+
+  .separator {
+    margin: 17px 31px 0 0;
+
+    width: 2px;
+    height: 40px;
+
+    background-color: $colorMonoTwo;
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row;
+
+    margin-top: 26px;
+
+    width: 100%;
+
+    .item {
+      margin-right: 24px;
+
+      font-size: 16px;
+      font-family: Rubik;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+  }
+
+  .cart {
+    display: flex;
+    flex-flow: row;
+
+    margin-top: 26px;
+
+    .icon-wrap {
+      margin-right: 31px;
+
+      .icon {
+        height: 24px;
+      }
+    }
+  }
+
+  .search {
+    display: flex;
+    flex-flow: row;
+    margin-top: 26px;
+
+    .s-icon {
+      margin: 0 17px 0 0;
+
+      width: 24px;
+      height: 24px;
+    }
+
+    .search-txt {
+      display: block;
+
+      font-size: 16px;
+      font-family: Rubik;
+      font-weight: 700;
+    }
+  }
+}
