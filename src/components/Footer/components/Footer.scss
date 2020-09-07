@@ -1,0 +1,61 @@
+@import "src/styles/globals/colors";
+
+#Footer {
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    .f-menu {
+      .f-menu-link {
+        margin-right: 15px;
+        font-size: 14px;
+        color: $colorMonoFour;
+
+        text-decoration: none;
+        font-family: rubik;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .so-me {
+      .icon {
+        margin-right: 16px;
+
+        width: 32px;
+        height: 32px;
+
+        fill: $colorMonoTwo;
+
+        cursor: pointer;
+
+        transition: fill 0.2s;
+
+        &:hover {
+          fill: $colorMonoSeven;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    border-top: 1px solid $colorMonoTwo;
+    padding: 24px 0;
+
+    text-align: center;
+
+    .idea-anchor {
+      color: $colorMonoFour;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

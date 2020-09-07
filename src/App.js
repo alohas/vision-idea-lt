@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <TopBar />
       <NavBar />
+      <Footer />
     </div>
   );
 }
