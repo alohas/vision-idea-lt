@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //Assets
 
@@ -11,11 +11,15 @@ import PlaySvg from "../../../assets/svgs/play.svg";
 import "./TryOnTutorial.scss";
 
 function TryOnTutorial() {
+  const [videoOpened, setVideoOpened] = useState(false);
+
+  let classNames = require("classnames");
+
   return (
     <div id="TryOnTutorial">
       <div className="wrapper">
         <div className="text-wrapper">
-          <div className="play-wrap">
+          <div className="play-wrap" onClick={clickedVideo}>
             <PlaySvg className="icon" />
           </div>
           <h3 className="section-heading">Visual Try On</h3>
@@ -29,8 +33,28 @@ function TryOnTutorial() {
           <img className="img" src={Laptop} alt="laptop" />
         </div>
       </div>
+      <div
+        className={classNames("modal", { open: videoOpened })}
+        onClick={clickedVideo}
+      >
+        <div className="modal-content">
+          <iframe
+            className="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
+
+  function clickedVideo() {
+    setVideoOpened(!videoOpened);
+  }
 }
 
 export default TryOnTutorial;
