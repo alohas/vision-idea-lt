@@ -4,10 +4,9 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 13px;
   padding: 0 40px;
 
-  height: 80px;
+  height: 100px;
 
   .l-side {
     display: flex;
@@ -23,47 +22,66 @@
   }
 
   .logo-wrap {
-    margin: 6px 31px 0 0;
+    align-self: center;
+
+    margin-right: 31px;
+
+    cursor: pointer;
+
     .logo {
       height: 47px;
     }
   }
 
   .separator {
-    margin: 17px 31px 0 0;
+    align-self: center;
+    margin: 0 31px 0 0;
 
     width: 2px;
     height: 40px;
 
     background-color: $colorMonoTwo;
+
+    &.nav-logo {
+      margin: 0;
+    }
   }
 
   .menu {
     display: flex;
     flex-flow: row;
+    align-items: center;
 
-    margin-top: 26px;
+    padding-left: 4px;
 
     width: 100%;
 
     .item {
-      margin-right: 24px;
+      padding: 0 2px 0 24px;
+      border-bottom: 1px solid transparent;
+
+      cursor: pointer;
 
       font-size: 16px;
       font-family: Rubik;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: 2px;
+
+      &:hover {
+        border-bottom: 1px solid $colorMonoSeven;
+      }
     }
   }
 
   .cart {
     display: flex;
     flex-flow: row;
-
-    margin-top: 26px;
+    align-items: center;
 
     .icon-wrap {
-      margin-right: 31px;
+      margin-right: 16px;
+
+      cursor: pointer;
 
       .icon {
         height: 24px;
@@ -74,10 +92,12 @@
   .search {
     display: flex;
     flex-flow: row;
-    margin-top: 26px;
+    align-items: center;
+
+    cursor: pointer;
 
     .s-icon {
-      margin: 0 17px 0 0;
+      margin: 0 14px 0 0;
 
       width: 24px;
       height: 24px;

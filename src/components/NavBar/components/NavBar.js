@@ -18,16 +18,17 @@ function NavBar() {
           <VisionLogoSvg className="logo" />
         </div>
 
-        <div className="separator"></div>
+        <div className="separator nav-logo"></div>
 
-        <div className="menu">
+        <nav className="menu">
           <div className="item">GLASSES ▼</div>
           <div className="item">SUNGLASSES ▼</div>
           <div className="item">HELP ME CHOOSE ▼</div>
           <div className="item">VISUAL TRY ON</div>
           <div className="item">BOOK AN EYE TEST</div>
-        </div>
+        </nav>
       </div>
+
       <div className="r-side">
         <div className="cart">
           <div className="icon-wrap">
