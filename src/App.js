@@ -3,8 +3,9 @@ import React from "react";
 //Components
 import TopBar from "./components/TopBar";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer/";
+import Specials from "./components/Specials";
 import NewsletterBanner from "./components/NewsletterBanner";
+import Footer from "./components/Footer/";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
         <NavBar />
       </header>
 
+      <Specials />
+
       <NewsletterBanner />
+
       <Footer />
     </div>
   );

@@ -1,0 +1,161 @@
+@import "src/styles/globals/colors";
+@import "src/styles/globals/variables";
+
+#Product {
+  position: relative;
+
+  margin: 0 12px 20px 12px;
+  padding: 18px;
+  width: 320px;
+
+  font-family: $ffRubik;
+
+  .special-labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .info {
+    cursor: pointer;
+
+    &:hover > .brand,
+    &:hover > .model {
+      text-decoration: underline;
+    }
+  }
+
+  .extendable {
+    display: inline-block;
+
+    &.grey {
+      .square,
+      .text-wrap {
+        background-color: $colorThree;
+      }
+    }
+
+    .square {
+      display: block;
+      float: left;
+
+      padding: 4px;
+      width: 28px;
+      height: 28px;
+
+      background-color: $colorFive;
+
+      &:hover + .text-wrap {
+        max-width: 240px;
+      }
+
+      .icon {
+        width: 100%;
+
+        fill: #fff;
+      }
+    }
+
+    .text-wrap {
+      display: flex;
+      max-width: 0;
+
+      background-color: $colorFive;
+      color: #fff;
+
+      line-height: 28px;
+
+      transition: max-width 0.3s;
+
+      .text {
+        display: block;
+
+        padding: 0 10px;
+
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+    .clearfix {
+      clear: both;
+    }
+  }
+
+  .favorite {
+    display: flex;
+    float: right;
+
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    .icon {
+      height: 26px;
+      width: auto;
+    }
+
+    &:hover {
+      fill: $colorFive;
+    }
+  }
+
+  .tn-wrap {
+    display: flex;
+
+    margin: 15px 0;
+    width: 100%;
+
+    .tn {
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  .prices {
+    justify-content: end;
+    padding-top: 12px;
+    height: 56px;
+
+    .old {
+      color: $colorMonoFour;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 12px;
+      text-decoration: line-through;
+    }
+
+    .new {
+      margin-bottom: 10px;
+
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .brand {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .model {
+    height: 40px;
+
+    color: $colorMonoFive;
+
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
