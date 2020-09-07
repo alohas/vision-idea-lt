@@ -39,6 +39,7 @@ function TryOnTutorial() {
       >
         <div className="modal-content">
           <iframe
+            title="rick'roll"
             className="video"
             width="560"
             height="315"
