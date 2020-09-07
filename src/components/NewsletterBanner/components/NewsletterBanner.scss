@@ -1,0 +1,94 @@
+@import "src/styles/globals/colors";
+@import "src/styles/globals/variables";
+
+#NewsletterBanner {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  background-color: $colorBanner;
+
+  .image {
+    max-height: 400px;
+  }
+
+  .newsletter-form-wrap {
+    display: flex;
+
+    margin: 0 auto;
+    padding: 30px 20px;
+
+    max-width: 620px;
+  }
+
+  .newsletter-form {
+    align-self: center;
+
+    .form-header {
+      margin-bottom: 32px;
+
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .email-input-field {
+      display: flex;
+
+      height: 50px;
+
+      .email-input {
+        padding: 10px 18px;
+
+        height: 100%;
+        width: 100%;
+
+        font-family: $ffRubik;
+        font-size: 16px;
+
+        outline-style: none;
+      }
+
+      .submit-button {
+        padding: 0 30px;
+        height: 100%;
+
+        background-color: $colorMonoSeven;
+
+        color: #fff;
+        font-family: $ffRubik;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+
+        cursor: pointer;
+        outline-style: none;
+
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: $colorTwo;
+        }
+      }
+    }
+
+    .form-policy {
+      margin-top: 26px;
+    }
+
+    .policy {
+      text-align: center;
+    }
+
+    .policy-link {
+      cursor: pointer;
+
+      color: $colorMonoFour;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

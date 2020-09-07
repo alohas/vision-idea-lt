@@ -4,6 +4,7 @@ import React from "react";
 import TopBar from "./components/TopBar";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer/";
+import NewsletterBanner from "./components/NewsletterBanner";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <NavBar />
       </header>
 
+      <NewsletterBanner />
       <Footer />
     </div>
   );
