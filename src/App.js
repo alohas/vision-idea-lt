@@ -3,12 +3,16 @@ import React from "react";
 //Components
 import TopBar from "./components/TopBar";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer/";
 
 function App() {
   return (
     <div className="App">
-      <TopBar />
-      <NavBar />
+      <header>
+        <TopBar />
+        <NavBar />
+      </header>
+
       <Footer />
     </div>
   );
