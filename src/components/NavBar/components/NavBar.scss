@@ -1,4 +1,5 @@
 @import "src/styles/globals/colors";
+@import "src/styles/globals/variables";
 
 #NavBar {
   display: flex;
@@ -63,7 +64,7 @@
       cursor: pointer;
 
       font-size: 16px;
-      font-family: Rubik;
+      font-family: $ffRubik;
       font-weight: 500;
       letter-spacing: 2px;
 
@@ -107,7 +108,7 @@
       display: block;
 
       font-size: 16px;
-      font-family: Rubik;
+      font-family: $ffRubik;
       font-weight: 700;
     }
   }
