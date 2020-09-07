@@ -7,6 +7,7 @@ import Specials from "./components/Specials";
 import NewsletterBanner from "./components/NewsletterBanner";
 import Footer from "./components/Footer/";
 import Brands from "./components/Brands/";
+import TryOnTutorial from "./components/TryOnTutorial";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <Brands />
 
       <Specials />
+
+      <TryOnTutorial />
 
       <NewsletterBanner />
 

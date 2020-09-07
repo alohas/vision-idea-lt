@@ -26,7 +26,7 @@ function Item({
           <div className="text-wrap">
             <span className="text">{special}</span>
           </div>
-          <div class="clearfix"></div>
+          <div className="clearfix"></div>
         </div>
 
         <div className="favorite">
