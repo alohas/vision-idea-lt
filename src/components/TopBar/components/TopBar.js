@@ -16,20 +16,22 @@ function TopBar() {
           <p className="language-selector">English ▼</p>
         </div>
       </div>
-      <div className="perks-container">
-        <div className="perk">
+
+      <ul className="perks-container">
+        <li className="perk">
           <CertifiedSvg className="icon" />
           <p className="perk-name">CERTIFIED DEALER</p>
-        </div>
-        <div className="perk">
+        </li>
+        <li className="perk">
           <CarSvg className="icon" />
           <p className="perk-name">FREE SHIPPING AND RETURNS</p>
-        </div>
-        <div className="perk">
+        </li>
+        <li className="perk">
           <PhoneSvg className="icon" />
           <p className="perk-name">CUSTOMER SUPPORT</p>
-        </div>
-      </div>
+        </li>
+      </ul>
+
       <div className="authorization-container">
         <div className="auth-wrap">
           <PhoneSvg className="icon" />
