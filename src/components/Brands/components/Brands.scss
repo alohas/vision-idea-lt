@@ -1,0 +1,28 @@
+@import "src/styles/globals/colors";
+@import "src/styles/globals/variables";
+
+#Brands {
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  max-width: 1200px;
+
+  .img-container {
+    margin: 0 16px;
+    max-width: 200px;
+
+    .img {
+      width: 100%;
+      height: auto;
+
+      opacity: 0.3;
+      cursor: pointer;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
